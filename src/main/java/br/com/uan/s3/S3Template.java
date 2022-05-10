@@ -20,7 +20,8 @@ import com.amazonaws.services.s3.model.AmazonS3Exception;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
 
-//@Component
+// Não deve ser um componente, deve ser instanciado manualmente como no S3AutoConfiguration.java
+// @Component
 public class S3Template
 {
     protected Logger logger = LoggerFactory.getLogger(S3Template.class);
