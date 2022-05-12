@@ -55,6 +55,9 @@ public class S3Template
      */
     private AmazonS3 s3;
 
+    /**
+     * Baixa o arquivo do S3 e salva em ${s3.tempFolder}/filename
+     */
     public File download(String bucket, String filename) throws IOException {
         S3Object o;
         try {
